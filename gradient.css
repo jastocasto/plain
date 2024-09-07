@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    cursor: none; /* Hide the default cursor */
+    position: relative;
+}
+
+.cursor-dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black; /* This will be updated dynamically */
+    border-radius: 50%; /* Makes the dot circular */
+    pointer-events: none; /* Ensure the dot doesn’t interfere with clicking */
+    z-index: 10000; /* Keep the dot above other elements */
+}
